@@ -1,0 +1,285 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #2b1d1d;
+  background: #fff8f1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.9rem 1.2rem;
+  font-weight: 800;
+  background: #7c2d12;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.05);
+}
+
+.page {
+  width: min(960px, 100%);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero {
+  margin: 1rem 0;
+  padding: 2rem 1.25rem;
+  border-radius: 2rem;
+  background: linear-gradient(135deg, #fff1df, #ffe4e6);
+  box-shadow: 0 16px 50px rgba(124, 45, 18, 0.12);
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 10vw, 5rem);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+.hero p {
+  max-width: 42rem;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 900;
+  color: #9a3412;
+  font-size: 0.8rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #fed7aa;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 12px 40px rgba(124, 45, 18, 0.08);
+}
+
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
+
+.cardHeader {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form label {
+  display: grid;
+  gap: 0.4rem;
+  font-weight: 800;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #fdba74;
+  border-radius: 1rem;
+  padding: 0.9rem 1rem;
+  background: #fffaf5;
+}
+
+.notice {
+  background: #ffedd5;
+  border: 1px solid #fdba74;
+  color: #7c2d12;
+  border-radius: 1rem;
+  padding: 0.9rem 1rem;
+  font-weight: 800;
+}
+
+.topActions {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.75rem 0;
+}
+
+.secondaryButton {
+  background: #fef3c7;
+  color: #7c2d12;
+}
+
+.dangerButton {
+  background: #b91c1c;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.4rem 0.75rem;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.pill.danger {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.questions {
+  display: grid;
+  gap: 1rem;
+}
+
+.question {
+  border: 1px solid #fed7aa;
+  border-radius: 1.25rem;
+  padding: 1rem;
+  margin: 0;
+  background: #fffaf5;
+}
+
+.question legend {
+  font-weight: 900;
+  line-height: 1.35;
+  padding: 0 0.25rem;
+}
+
+.question legend span {
+  display: inline-grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-right: 0.5rem;
+  border-radius: 999px;
+  background: #7c2d12;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.options {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  border: 1px solid #fed7aa;
+  border-radius: 1rem;
+  padding: 0.8rem;
+  background: white;
+  font-weight: 700;
+}
+
+.option input {
+  width: auto;
+}
+
+.option.selected {
+  border-color: #7c2d12;
+  background: #ffedd5;
+}
+
+.adminCard {
+  border-color: #c084fc;
+}
+
+.adminActions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.leaderboard {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.leaderboardRow {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+}
+
+.rank {
+  font-weight: 900;
+  color: #9a3412;
+}
+
+.leaderboardName {
+  font-weight: 900;
+}
+
+.score {
+  font-weight: 900;
+  background: #7c2d12;
+  color: white;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+}
+
+.answersSummary {
+  margin-top: 1rem;
+}
+
+.answersSummary summary {
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.mutedCard {
+  background: #fffaf5;
+}
+
+@media (min-width: 720px) {
+  .page {
+    padding: 2rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+.adminActions {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+  .options {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
